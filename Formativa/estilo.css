@@ -1,0 +1,46 @@
+header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+span > a{
+   color: black;
+   font-size: 30px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   margin-left: 20px;
+   text-decoration: none;
+}
+img.e1{
+    width: 100px;
+    text-align: left;
+}
+.menu{
+    margin: auto;
+}
+footer{
+    background-color: white;
+    text-align: center;
+}
+body{
+    background-color: black;
+    text-align: center;
+}
+h1{
+    text-align: center;
+   color: red;
+}
+h2{
+   color: white;
+}
+p{
+    color: black;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.e2{
+    width: 500px;
+}
+.e3{
+    width: 50px;
+    height: 50px;
+}
