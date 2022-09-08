@@ -1,0 +1,94 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.eh{
+    background-color: sandybrown;
+    color: #6E2602;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+.eh a:hover {
+    color: cornsilk;
+}
+span > a{
+   color: black;
+   font-size: 30px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   text-decoration: none;
+   padding: 10px;
+}
+img.e1{
+    width: 80px;
+    text-align: left;
+}
+.menu{
+    margin: auto;
+}
+footer{
+
+    background: sandybrown;
+    width: 100%;
+    height: 100%;
+  
+}
+body{
+    background-color: blanchedalmond;
+    text-align: center;
+    padding: -20px;
+}
+h1 {
+    font-size: 40px;
+    color:#6E2602;
+    text-align: center;
+    font-family: "Open Sans",sans-serif; 
+}
+
+h3{
+    color: chocolate;
+    font-size: 35px;
+    font-family: "Opens Sans",sans-serif;
+}
+
+p{
+    color: chocolate;
+    text-indent: 30px;
+    text-transform: uppercase;
+    display: block;
+}
+footer p{
+    padding: 20px;
+}
+.e3 {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 30px;
+  }
+  
+  .e3:hover {
+    box-shadow: 0 0 2px 1px chocolate;
+  }
+
+.btn{
+    background-color: chocolate; 
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-color: SaddleBrown;
+    border-radius: 15px;
+}
+h3:nth-child(2){
+    margin-top: 30px;
+}
+
+
+
