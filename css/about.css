@@ -1,0 +1,21 @@
+.banner{
+    position: relative;
+}
+.banner img{
+    width: 1005;
+    filter: opacity(20%);
+}
+.banner h1{
+    position: absolute;
+    font-weight:800;
+    font-size: 5rem;
+    /* top: 650px; */
+    bottom:50px;
+    left: 50px;
+}
+.i{
+    width: 200px;
+}
+.i2{
+    width:1000px
+}

@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Poppins&display=swap');
+
+:root{
+    --dark-blue:#0E45A1; 
+    --dark:#040405;
+    --light-blue:#A7BFE8;
+    --red:#F0100C;
+    --yellow:#EBE700;
+    --silver:#D8DDE2;
+    --blue-boy:#009DFF;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-family: 'Archivo', sans-serif;
+}
+body{
+    background-color: #040405;
+}
+
+.back-to-top{
+    background-color: var(--dark);
+    border: var(--dark);
+}
+.back-to-top:hover{
+    background-color: var(--red) !important;
+}
+
+/* .tituloSobre{
+    color: var(--dark-blue) !important;
+} */
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: var(--silver);
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.brand{
+    color: var(--dark-blue);
+}
+
+.navbar{
+    background-color: #040405 !important;
+    border-radius: 0px 0px 50px 50px;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.2);
+}
+
+/*** Navbar ***/
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+.navbar .navbar-nav .nav-link {
+    margin-right: 30px;
+    padding: 40px 0;
+    font-size: 22px;
+    outline: none;
+}
+
+.navbar.sticky-top {
+    top: -100px;
+    transition: .5s;
+}
+
+.brand{
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+.nav-item:hover{
+    color: snow !important;
+}
+
+.nav-item{
+    font-family: 'Poppins' !important;
+}
+
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    border-radius: 0px;
+    text-align: left;
+    padding-top: 10px;
+    height: 50px;
+    width: 52px;
+    right: 40px;
+    bottom: 40px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.534) inset;
+    z-index: 99;
+}
+
+
+/*** Footer ***/
+.footer{
+    background-color: #040405 !important;
+    justify-content: space-between !important;
+    box-shadow: -1px -1px 10px rgba(255, 255, 255, 0.178);
+    padding: 0px !important;
+}
+
+.footer .btn.link {
+    font-family: 'Poppins' !important;
+    display: block;
+    margin-bottom: 5px; 
+    padding: 0;
+    text-align: center;
+    color: var(--silver);
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .btn.link:hover {
+    color: var(--dark-blue);
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.footer .copyright {
+    padding: 1.5rem;
+    font-size: 15px;
+    background: var(--dark);
+}
+
+.footer .copyright a {
+    font-family: 'Archivo'!important;
+    color: var(--silver);
+    text-decoration: none;
+    border: none !important;
+}
+
+.footer .copyright a:hover {
+    color: var(--red);
+}
+
+.form-control.border-0.w-100.py-3.ps-4.pe-5{
+    width: 70% !important;
+    margin-left: auto;
+}
+
+.redes{
+    justify-content: right;
+}
+
+.btn.btn-lg-square.btn-dark.text.m-1:hover{
+    background-color: var(--dark-blue);
+}
+
+.text-uppercase{
+    font-family: 'Poppins' !important;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.btn.link{
+    display: flex;
+    font-size: 1.2em !important;
+    color: var(--silver);
+}
+
+
+@media (max-width: 991.98px) {
+    .navbar .navbar-nav .nav-link,
+    .navbar.shadow-sm .navbar-nav .nav-link {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+
+    .navbar .navbar-nav {
+        margin-top: 8px;
+        border-top: 1px solid var(--light);
+    }
+
+    .footer{
+        margin: auto !important;
+        text-align: center;
+    }
+
+    .form-control.border-0.w-100.py-3.ps-4.pe-5{
+        width: 60% !important;
+        margin: auto;
+    }
+    .footer .btn.link {
+        margin: auto;
+        text-align: center;
+    }
+    .footer span{
+        text-align: center !important;
+        margin: auto;
+    }
+    .footer span::before{
+        display: none;
+    }
+    .redes{
+        justify-content: center;
+    }
+
+    .footer button{
+        display: block;
+        position: relative !important;
+        margin: 10px auto !important;
+        width: 60%;
+    }
+
+    .col-lg-4.col-md-6 h4{
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar.shadow-sm .navbar-nav .nav-link {
+        padding: 20px 0;
+    }
+
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        border: none;
+        margin-top: 0;
+        top: 150%;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        top: 100%;
+        visibility: visible;
+        transition: .5s;
+        opacity: 1;
+    }
+}

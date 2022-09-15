@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat&display=swap');
+
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.Aurora{
+    height: 80vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 100px;
+    background-image: url('../img/index/truck.png');
+    background-repeat: no-repeat;
+    text-align: right;
+}
+
+.primeiroTitulo{
+    font-family: 'Archivo';
+    display: inline-flex;
+    font-size: 18vw;
+    color: white;
+}
+
+.fraseTitulo{
+    font-family: 'Archivo';
+    display: inline-flex;
+    animation: loadingX 1s linear;
+    text-transform: uppercase;
+    color: white;
+}
+
+.agrupar{
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.tituloSobre{
+    background-color: rgba(240, 255, 255, 0.112);
+}
+
+.textoSobre{
+    color: white;
+    text-align: justify;
+}
+
+h1.textoProduto{
+    color: white;
+}
+
+.tituloPrincipalSobre{
+    font-family: 'Poppins';
+    width: 55% !important;
+    background-color: rgba(240, 255, 255, 0.112);
+}
+
+.service-item{
+    height: 250px !important;
+    background-size: contain;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.service-item .btn {
+    position: absolute;
+    right: -50px;
+    border-radius: 0px !important;
+    bottom: -50px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(63, 63, 63);
+    opacity: 0;
+} 
+
+.service-item:hover{
+    animation: aproxima 1s both;
+    cursor: pointer !important;
+}
+
+.service-item:hover h3{
+    animation: aparece 1s both;
+}
+
+.servico{
+    width: 100vw !important;
+    background-repeat: repeat !important; 
+    padding: 54px;
+    cursor: default;
+}
+
+h3.textoProduto{
+    transform: rotate(270deg);
+    width: 90% !important;
+    text-align: center;
+    font-size: 35px;
+    font-family:'Montserrat', cursive !important;
+    opacity: 0;
+    color: rgb(255, 255, 255) !important;
+}
+
+.service-item:focus{
+    transform: scale(1.5);
+}
+
+.service-item:focus h3{
+    opacity: 1;
+}
+
+.mais{
+    display: block;
+    line-height: 35px;
+    margin-bottom: auto;
+    height: 50px !important;
+    background-color: aliceblue !important;
+}
+
+.mais:hover{
+    color: white !important;
+    background-color: rgb(0, 0, 0) !important;
+}
+
+.perfil{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    text-align: center;
+    border-radius: 50%;
+    
+}
+
+.team-social{
+    text-align: center;
+}
+
+.team-img{
+    text-align: center;
+}
+
+.testimonial {
+    position: relative;
+    padding: 150px 0;
+    text-align: center;
+    background-color: rgba(15, 15, 15, 0.863);
+}
+
+.testimonial .container {
+    max-width: 760px;
+}
+
+.about-page .testimonial {
+    padding-bottom: 90px;
+}
+
+.testimonial .testimonial-slider-nav {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.testimonial .testimonial-slider-nav .slick-slide {
+    position: relative;
+    opacity: 0;
+    transition: .5s;
+}
+
+.testimonial .testimonial-slider-nav .slick-active {
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+.testimonial .testimonial-slider-nav .slick-center {
+    transform: scale(1.8);
+    z-index: 1;
+}
+
+.testimonial .testimonial-slider-nav .slick-slide img {
+    position: relative;
+    display: block;
+    margin-top: 37px;
+    width: 100%;
+    height: auto;
+    border-radius: 100px;
+}
+
+.testimonial .testimonial-slider {
+    position: relative;
+    margin-top: 15px;
+    padding-top: 50px;
+}
+
+.testimonial .testimonial-slider::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 50px;
+    top: 0;
+    left: calc(50% - 30px);
+    background: url(../img/quote.png) top center no-repeat;
+}
+
+.testimonial .testimonial-slider h3 {
+    color: #fdbe33;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.testimonial .testimonial-slider h4 {
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffffff;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.testimonial .testimonial-slider p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.services23{
+    margin: 10px 0px;
+    width: 100%;
+    border-radius: 5px ;
+}
+
+@keyframes loadingX {
+	0% {
+		transform: translateX(-50%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+@keyframes aproxima {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(1.2);
+	}
+}
+
+@keyframes aparece {
+	0% {
+            opacity: 0;
+
+	}
+	100% {
+            opacity: 1;
+	}
+}
+
+@keyframes loadingY {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+
+@media (max-width: 500px) {
+    .primeiroTitulo{
+        display: block;
+        font-size: 8.5vh;
+    }
+    .fraseTitulo{
+        display: block;
+        font-size: 1.9vh;
+        animation: loadingY 1s linear;
+    }
+
+    .esquerda{
+        margin-right: 25%;
+    }
+
+}
+
+@media(max-width:992px){
+    .servico{
+        background-image: url('../img/index/estrada2.png') !important;
+        background-size: contain;
+    }
+}
+
+@media (min-width: 992px) {
+    .container.contact {
+        max-width: 100% !important;
+    }
+
+    .contact-text  {
+        padding-left: calc(((100% - 960px) / 2) + .75rem);
+    }
+}
+
+@media (min-width: 1200px) {
+    .contact-text  {
+        padding-left: calc(((100% - 1140px) / 2) + .75rem);
+    }
+}
+
+@media (min-width: 1400px) {
+    .contact-text  {
+        padding-left: calc(((100% - 1320px) / 2) + .75rem);
+    }
+}
